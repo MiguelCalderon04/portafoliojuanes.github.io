@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juanes_calde</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Menú -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+      <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <a href="#hero" class="text-blue-600 font-bold text-2xl">Juanes_calde</a>
+        <ul class="hidden md:flex space-x-8 text-blue-600 font-semibold">
+          <li><a href="#hero" class="hover:text-blue-800 transition">Inicio</a></li>
+          <li><a href="#sobre-mi" class="hover:text-blue-800 transition">Sobre mí</a></li>
+          <li><a href="#ugc" class="hover:text-blue-800 transition">¿Qué es UGC?</a></li>
+          <li><a href="#trabajos" class="hover:text-blue-800 transition">Trabajos</a></li>
+          <li><a href="#estadisticas" class="hover:text-blue-800 transition">Estadísticas</a></li>
+          <li><a href="#contacto" class="hover:text-blue-800 transition">Contacto</a></li>
+        </ul>
+        <!-- Menu móvil toggle -->
+        <button id="menu-btn" class="md:hidden text-blue-600 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </nav>
+      <!-- Menu móvil -->
+      <div id="menu-mobile" class="hidden md:hidden bg-white shadow-md">
+        <ul class="flex flex-col p-4 space-y-3 text-blue-600 font-semibold">
+          <li><a href="#hero" class="hover:text-blue-800 transition">Inicio</a></li>
+          <li><a href="#sobre-mi" class="hover:text-blue-800 transition">Sobre mí</a></li>
+          <li><a href="#ugc" class="hover:text-blue-800 transition">¿Qué es UGC?</a></li>
+          <li><a href="#trabajos" class="hover:text-blue-800 transition">Trabajos</a></li>
+          <li><a href="#estadisticas" class="hover:text-blue-800 transition">Estadísticas</a></li>
+          <li><a href="#contacto" class="hover:text-blue-800 transition">Contacto</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="relative h-screen flex items-center justify-center text-white text-center bg-cover bg-pt-16" style="background-image: url('img/fondo-hero.jpg');">
+      <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+      <div class="relative z-10 px-4">
+        <h1 class="text-5xl font-bold mb-4">Hola, soy Juan Esteban</h1>
+        <p class="text-xl max-w-xl mx-auto">Creador de contenido UGC apasionado por la moda y el estilo</p>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6 text-center text-blue-600">Sobre mí</h2>
+      <div class="text-lg leading-relaxed text-center max-w-3xl mx-auto">
+        <p>Soy un joven de 19 años apasionado por la moda, comprometido con crear contenido auténtico y de alto valor para marcas. Me destaco por ser responsable, creativo y con habilidades para conectar con diferentes tipos de audiencias a través de formatos como reviews, unboxings, estilo de vida, voz en off y tutoriales. Mi objetivo es colaborar con marcas que quieran destacarse con contenido fresco y real.</p>
+        <img src="img/cliente-ugc.jpg" alt="Foto del cliente" class="mx-auto mt-6 rounded-xl shadow-lg max-w-xs" />
+      </div>
+    </section>
+
+    <!-- ¿Qué es UGC? -->
+    <section id="ugc" class="max-w-5xl mx-auto px-6 py-16 bg-white" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6 text-center text-blue-600">¿Qué es UGC?</h2>
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2">
+          <img src="img/ugc-explained.jpg" alt="UGC Explicado" class="rounded-xl shadow-md w-full" />
+        </div>
+        <div class="md:w-1/2 text-lg leading-relaxed">
+          <p>UGC significa "User Generated Content" o contenido generado por el usuario. Es contenido creado por personas reales, no por la marca, lo que lo hace más auténtico, confiable y cercano. Ideal para conectar emocionalmente con audiencias modernas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trabajos recientes -->
+    <section id="trabajos" class="max-w-6xl mx-auto px-6 py-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-10 text-center text-blue-600">Trabajos recientes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Trabajo 1 -->
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white" data-aos="fade-up" data-aos-delay="100">
+          <video controls class="w-full aspect-[9/16] object-cover" preload="metadata">
+            <source src="videos/trabajo1.mp4" type="video/mp4" />
+          </video>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Review de Producto X</h3>
+            <p>Video de unboxing y opinión honesta sobre el producto.</p>
+          </div>
+        </div>
+
+        <!-- Trabajo 2 -->
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white" data-aos="fade-up" data-aos-delay="200">
+          <video controls class="w-full aspect-[9/16] object-cover" preload="metadata">
+            <source src="videos/trabajo2.mp4" type="video/mp4" />
+          </video>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Video Explicativo</h3>
+            <p>Gcomo vestir sin moror en el intento.</p>
+          </div>
+        </div>
+
+        <!-- Trabajo 3 -->
+        <div class="rounded-xl overflow-hidden shadow-lg bg-white" data-aos="fade-up" data-aos-delay="300">
+          <video controls class="w-full aspect-[9/16] object-cover" preload="metadata">
+            <source src="videos/trabajo3.mp4" type="video/mp4" />
+          </video>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Estilo de vida - Lifestyle</h3>
+            <p>Momentos auténticos y cotidianos que conectan con la audiencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section id="estadisticas" class="max-w-5xl mx-auto px-6 py-16 bg-blue-50 rounded-xl" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-12 text-center text-blue-600">Estadísticas</h2>
+      <div class="flex justify-around text-center space-x-6">
+        <div>
+          <p class="text-5xl font-extrabold text-blue-600 count" data-target="120">0</p>
+          <p class="mt-2 text-lg font-semibold text-gray-700">Colaboraciones</p>
+        </div>
+        <div>
+          <p class="text-5xl font-extrabold text-blue-600 count" data-target="50000">0</p>
+          <p class="mt-2 text-lg font-semibold text-gray-700">Visualizaciones</p>
+        </div>
+        <div>
+          <p class="text-5xl font-extrabold text-blue-600 count" data-target="10000">0</p>
+          <p class="mt-2 text-lg font-semibold text-gray-700">Seguidores</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-black text-white py-16 px-6 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">¿Trabajamos juntos?</h2>
+      <p class="mb-6">Contáctame directamente vía WhatsApp para colaboraciones o campañas.</p>
+      <a
+        href="https://wa.me/573118095081"
+        target="_blank"
+        class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl transition"
+      >
+        Escríbeme por WhatsApp
+      </a>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>

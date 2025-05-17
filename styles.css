@@ -1,0 +1,41 @@
+/* Microanimaciones para títulos y botones */
+h2:hover {
+  color: #2563eb; /* Azul Tailwind 600 */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button#btn-back-to-top {
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  will-change: opacity;
+  transition: opacity 0.3s ease;
+}
+
+/* Botones redes sociales y WhatsApp animación */
+a[href*="wa.me"] {
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.7);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+a[href*="wa.me"]:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 1);
+  transform: scale(1.1);
+}
+
+/* Animación hover en cards de trabajos (ya en Tailwind, refuerzo aquí) */
+div[data-aos] {
+  will-change: transform, opacity;
+}
+
+/* Ajustes responsive (si necesitas) */
+/* Ejemplo, texto más legible en móvil para estadísticas */
+@media (max-width: 640px) {
+  #estadisticas p.text-5xl {
+    font-size: 3rem;
+  }
+}
